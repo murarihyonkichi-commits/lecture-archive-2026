@@ -133,9 +133,13 @@ p{margin:0 0 1.2em}
 /* offer */
 .offer{background:var(--paper);border:2px solid var(--accent);border-radius:22px;padding:34px 24px;text-align:center;box-shadow:var(--shadow)}
 .offer .title{font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.7;margin-bottom:14px}
-.price{font-family:var(--serif);font-weight:900;font-size:clamp(40px,11vw,56px);color:var(--accent-deep);line-height:1.2}
-.price small{font-size:16px;font-weight:700;margin-left:4px}
-.deadline{display:inline-block;background:var(--blush);color:var(--accent-deep);font-weight:700;padding:6px 16px;border-radius:999px;font-size:14px;margin:12px 0 22px}
+.price{font-family:var(--serif);font-weight:700;font-size:clamp(26px,7vw,32px);color:var(--fg);line-height:1.3;margin-bottom:22px}
+.price small{font-size:14px;font-weight:700;margin-left:4px}
+.limit{display:inline-flex;align-items:baseline;flex-wrap:wrap;justify-content:center;gap:4px 8px;background:#fff3cd;color:#8a1c24;border:2px solid #e0a43a;border-radius:16px;padding:10px 20px;margin:4px 0 18px;font-weight:900;box-shadow:0 6px 18px rgba(224,164,58,.25)}
+.limit b{font-family:var(--serif);font-size:clamp(38px,10vw,52px);line-height:1;letter-spacing:.02em}
+.limit-day{font-size:clamp(16px,4.4vw,20px)}
+.limit-label{display:block;width:100%;text-align:center;font-size:12px;letter-spacing:.2em;color:#b4565c}
+.limit-hero{background:rgba(255,243,205,.95);margin-bottom:22px}
 .spec{text-align:left;margin:26px auto 0;max-width:520px;border-top:1px solid var(--line)}
 .spec div{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:12px 4px;border-bottom:1px solid var(--line);font-size:14.5px}
 .spec dt,.spec b{color:var(--muted);font-weight:700}
@@ -158,7 +162,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 40p
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:center;gap:14px;transform:translateY(110%);transition:transform .25s ease}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sticky{background:rgba(39,30,31,.92)}}
 .sticky.show{transform:none}
-.sticky .p{font-family:var(--serif);font-weight:900;color:var(--accent-deep);font-size:20px;white-space:nowrap}
+.sticky .p{font-family:var(--serif);font-weight:900;color:#8a1c24;font-size:22px;white-space:nowrap;line-height:1.15;text-align:center}
 .sticky .p small{font-size:11px;color:var(--muted);font-weight:500;display:block;line-height:1.2}
 .sticky .btn{font-size:16px;padding:13px 24px}
 
@@ -181,8 +185,9 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 40p
     <p class="sub">自分を好きになる人生戦略</p>
     <p class="sub">〜あなたは最高傑作品〜</p>
     <p class="meta">2026年10月10日（土）名古屋レジェンドホールにて収録</p>
-    <a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">アーカイブを申し込む <small>5,500円</small></a>
-    <p class="btn-note">販売は 11月30日（月）23:59 まで</p>
+    <div class="limit limit-hero"><span class="limit-label">販売期間</span><b>11/30</b><span class="limit-day">（月）23:59まで</span></div>
+    <a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">アーカイブを申し込む</a>
+    <p class="btn-note">5,500円（税込）</p>
   </div>
 </header>
 
@@ -197,7 +202,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 40p
       <div class="stat"><b>3<small style="font-size:.5em">部</small></b><span>講演・ゲスト・<br>クロストーク</span></div>
     </div>
     <div class="praise">
-      <p class="praise-main">「ここ最近聞いた講演会で、<br>一番感動した！」</p>
+      <p class="praise-main">「ここ最近聞いた講演会で、<br>一番良かった！」</p>
       <p class="praise-sub">「感動しました」</p>
       <p class="praise-from">講演会のあとのシェア会で、参加された方からいただいた言葉です</p>
     </div>
@@ -372,8 +377,8 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 40p
     <h2>お申し込み</h2>
     <div class="offer">
       <div class="title">ここからフルネス株式会社 創業1周年記念講演会<br>「自分を好きになる人生戦略 〜あなたは最高傑作品〜」アーカイブ</div>
+      <div class="limit"><span class="limit-label">販売期間</span><b>11/30</b><span class="limit-day">（月）23:59まで</span></div>
       <div class="price">5,500<small>円（税込）</small></div>
-      <div class="deadline">販売は 11月30日（月）23:59 まで</div>
       <div><a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">アーカイブを申し込む</a></div>
       <p class="btn-note">リザーブストックのお申し込みページに移ります</p>
       <dl class="spec">
@@ -419,8 +424,9 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 40p
 <section class="final">
   <div class="wrap">
     <p class="lead">あなたは、最高傑作品。<br>その言葉を、受け取ってください。</p>
-    <a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">アーカイブを申し込む <small>5,500円</small></a>
-    <p class="btn-note">販売は 11月30日（月）23:59 まで</p>
+    <div class="limit"><span class="limit-label">販売期間</span><b>11/30</b><span class="limit-day">（月）23:59まで</span></div>
+    <a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">アーカイブを申し込む</a>
+    <p class="btn-note">5,500円（税込）</p>
   </div>
 </section>
 
@@ -430,7 +436,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 40p
 </footer>
 
 <div class="sticky" id="sticky">
-  <div class="p">5,500円<small>11/30（月）まで</small></div>
+  <div class="p"><small>販売は</small>11/30まで<small>5,500円（税込）</small></div>
   <a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">申し込む</a>
 </div>
 
