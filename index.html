@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>講演会アーカイブ「あなたは最高傑作品」</title>
+<meta name="description" content="ここからフルネス株式会社 創業1周年記念講演会「自分を好きになる人生戦略 〜あなたは最高傑作品〜」のアーカイブ動画。ゲスト：岡崎かつひろさん・下間都代子さん。">
+<meta property="og:title" content="講演会アーカイブ「あなたは最高傑作品」">
+<meta property="og:description" content="90名を超える方が集まった、創業1周年記念講演会を、ご自宅で。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://murarihyonkichi-commits.github.io/lecture-archive-2026/">
+<meta property="og:image" content="https://murarihyonkichi-commits.github.io/lecture-archive-2026/audience.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fcf4f1; --paper:#ffffff; --blush:#f6e2df; --fg:#4a3830; --muted:#8a736a; --line:#ecd9d3;
+  --accent:#cf6f73; --accent-deep:#a94a52; --grad-a:#d97a80; --grad-b:#b4565c; --gold:#a5864a;
+  --shadow:0 10px 30px rgba(120,60,60,.10);
+  --sans:"Noto Sans JP",system-ui,-apple-system,"Hiragino Sans",sans-serif;
+  --serif:"Noto Serif JP","Hiragino Mincho ProN",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1e1718; --paper:#271e1f; --blush:#3a2a2c; --fg:#f4e9e5; --muted:#c9b0a7; --line:#45342f;
+    --accent:#e48f93; --accent-deep:#f0a0a4; --grad-a:#d98085; --grad-b:#b65b61; --gold:#d3b57a;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1e1718; --paper:#271e1f; --blush:#3a2a2c; --fg:#f4e9e5; --muted:#c9b0a7; --line:#45342f;
+  --accent:#e48f93; --accent-deep:#f0a0a4; --grad-a:#d98085; --grad-b:#b65b61; --gold:#d3b57a;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.label{display:block;text-align:center;font-size:12px;letter-spacing:.3em;color:var(--gold);font-weight:700;margin-bottom:6px}
+h2{font-family:var(--serif);font-size:clamp(22px,5.4vw,30px);text-align:center;margin:0 0 36px;line-height:1.6;font-weight:700}
+h2 .em{color:var(--accent-deep)}
+p{margin:0 0 1.2em}
+
+/* hero */
+.hero{position:relative;padding:0;color:#fff;background:#2a1d1e}
+.hero-img{width:100%;height:min(78vh,620px);object-fit:cover;opacity:.55}
+.hero-inner{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px 20px}
+.hero .kicker{font-size:13px;letter-spacing:.2em;border:1px solid rgba(255,255,255,.7);padding:4px 14px;border-radius:999px;margin-bottom:22px}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(34px,9vw,60px);line-height:1.35;margin:0 0 18px;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.hero .sub{font-family:var(--serif);font-size:clamp(16px,4.2vw,22px);margin:0 0 6px;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.hero .meta{font-size:13px;opacity:.95;margin:12px 0 26px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--grad-a),var(--grad-b));color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:18px 34px;border-radius:999px;box-shadow:0 8px 22px rgba(180,86,92,.35);transition:transform .15s ease,box-shadow .15s ease;max-width:100%}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(180,86,92,.45)}
+/* 申し込みボタンのフルフル（3秒ごとに小さくふるえる） */
+@keyframes furufuru{
+  0%,72%,100%{transform:translate(0,0) rotate(0)}
+  74%{transform:translate(-2px,0) rotate(-2deg)}
+  76%{transform:translate(2px,0) rotate(2deg)}
+  78%{transform:translate(-2px,0) rotate(-1.5deg)}
+  80%{transform:translate(2px,0) rotate(1.5deg)}
+  82%{transform:translate(-1px,0) rotate(-1deg)}
+  84%{transform:translate(1px,0) rotate(1deg)}
+  86%{transform:translate(0,0) rotate(0)}
+}
+.btn{animation:furufuru 3s ease-in-out infinite}
+.btn:hover{animation-play-state:paused}
+@media (prefers-reduced-motion: reduce){.btn{animation:none}}
+.btn small{font-weight:500;font-size:13px;opacity:.95}
+.btn-note{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
+.hero .btn-note{color:#fff;opacity:.9}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 8px;text-align:center}
+.stat b{display:block;font-family:var(--serif);font-size:clamp(26px,7vw,36px);color:var(--accent-deep);line-height:1.2}
+.stat span{font-size:12px;color:var(--muted)}
+.praise{margin-top:28px;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:30px 20px 22px;text-align:center;position:relative;box-shadow:var(--shadow)}
+.praise::before{content:"“";position:absolute;top:-18px;left:50%;transform:translateX(-50%);width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;font-family:var(--serif);font-size:40px;line-height:58px}
+.praise-main{font-family:var(--serif);font-weight:900;font-size:clamp(21px,5.6vw,28px);line-height:1.7;color:var(--accent-deep);margin:0 0 6px}
+.praise-sub{font-family:var(--serif);font-weight:700;font-size:clamp(17px,4.4vw,20px);margin:0 0 14px}
+.praise-from{font-size:12.5px;color:var(--muted);margin:0}
+
+/* for you */
+.checks{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.checks li{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px 18px 16px 52px;position:relative;font-weight:500}
+.checks li::before{content:"";position:absolute;left:18px;top:50%;width:20px;height:20px;margin-top:-10px;border-radius:50%;background:var(--accent)}
+.checks li::after{content:"";position:absolute;left:24px;top:50%;width:8px;height:4px;margin-top:-4px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg)}
+
+.message{background:var(--blush)}
+.message .lead{font-family:var(--serif);font-size:clamp(18px,4.6vw,22px);text-align:center;line-height:2.1;margin-bottom:28px}
+.message .sign{text-align:right;font-family:var(--serif);font-weight:700}
+
+/* program */
+.prog{display:grid;gap:18px}
+.prog-item{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.prog-item .no{display:inline-block;font-family:var(--serif);color:var(--gold);font-weight:700;letter-spacing:.15em;font-size:13px}
+.prog-body{padding:22px 22px 24px}
+.prog-body h3{font-family:var(--serif);font-size:20px;margin:4px 0 10px;line-height:1.6}
+.prog-body p{margin:0;color:var(--muted);font-size:15px}
+.prog-item img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.prog-item.stage img{object-position:50% 25%}
+.clip{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:#000}
+.clip video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+
+/* voices */
+.voices{background:var(--blush)}
+.voice-grid{display:grid;gap:16px}
+.voice{background:var(--paper);border-radius:18px;padding:26px 24px 20px;position:relative;box-shadow:var(--shadow)}
+.voice::before{content:"“";position:absolute;top:-6px;left:16px;font-family:var(--serif);font-size:64px;color:var(--accent);line-height:1;opacity:.6}
+.voice p{margin:0 0 12px;font-size:15.5px}
+.voice .who{font-size:13px;color:var(--muted);text-align:right;margin:0}
+.voice.big p{font-family:var(--serif);font-size:16.5px;line-height:2}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.chip{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:10px 16px;font-size:14px}
+.chip em{font-style:normal;color:var(--muted);font-size:12px;margin-left:6px;white-space:nowrap;display:inline-block}
+.voice-note{font-size:12px;color:var(--muted);text-align:center;margin-top:18px}
+
+/* people */
+.person{display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:16px}
+.person img{width:110px;height:110px;border-radius:50%;object-fit:cover}
+.person h3{font-family:var(--serif);margin:0 0 2px;font-size:19px}
+.person .role{font-size:13px;color:var(--gold);font-weight:700;margin-bottom:8px}
+.person p{font-size:14.5px;margin:0;color:var(--fg)}
+.host{grid-template-columns:140px 1fr}
+.host img{width:140px;height:140px}
+
+/* offer */
+.offer{background:var(--paper);border:2px solid var(--accent);border-radius:22px;padding:34px 24px;text-align:center;box-shadow:var(--shadow)}
+.offer .title{font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.7;margin-bottom:14px}
+.price{font-family:var(--serif);font-weight:900;font-size:clamp(40px,11vw,56px);color:var(--accent-deep);line-height:1.2}
+.price small{font-size:16px;font-weight:700;margin-left:4px}
+.deadline{display:inline-block;background:var(--blush);color:var(--accent-deep);font-weight:700;padding:6px 16px;border-radius:999px;font-size:14px;margin:12px 0 22px}
+.spec{text-align:left;margin:26px auto 0;max-width:520px;border-top:1px solid var(--line)}
+.spec div{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:12px 4px;border-bottom:1px solid var(--line);font-size:14.5px}
+.spec dt,.spec b{color:var(--muted);font-weight:700}
+
+/* faq */
+details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:4px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;padding:14px 0;list-style:none;position:relative;padding-right:28px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q.";color:var(--accent);margin-right:8px;font-family:var(--serif)}
+summary::after{content:"+";position:absolute;right:0;top:12px;font-size:22px;color:var(--accent)}
+details[open] summary::after{content:"−"}
+details p{margin:0 0 16px;font-size:15px;color:var(--muted)}
+
+.final{text-align:center;background:linear-gradient(180deg,var(--bg),var(--blush))}
+.final .lead{font-family:var(--serif);font-size:clamp(20px,5vw,26px);line-height:2;margin-bottom:28px}
+
+footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 40px}
+
+/* sticky cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;justify-content:center;gap:14px;transform:translateY(110%);transition:transform .25s ease}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sticky{background:rgba(39,30,31,.92)}}
+.sticky.show{transform:none}
+.sticky .p{font-family:var(--serif);font-weight:900;color:var(--accent-deep);font-size:20px;white-space:nowrap}
+.sticky .p small{font-size:11px;color:var(--muted);font-weight:500;display:block;line-height:1.2}
+.sticky .btn{font-size:16px;padding:13px 24px}
+
+@media (max-width:560px){
+  section{padding:56px 0}
+  .person,.host{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .spec div{grid-template-columns:96px 1fr}
+  .btn{font-size:17px;padding:17px 26px}
+}
+</style>
+</head>
+<body>
+
+<!-- ヒーロー -->
+<header class="hero">
+  <img class="hero-img" src="audience.jpg" alt="創業1周年記念講演会の会場。参加者のみなさんとの記念写真">
+  <div class="hero-inner">
+    <span class="kicker">創業1周年記念講演会 アーカイブ</span>
+    <h1>ここから、<br>何度でも輝ける。</h1>
+    <p class="sub">自分を好きになる人生戦略</p>
+    <p class="sub">〜あなたは最高傑作品〜</p>
+    <p class="meta">2026年10月10日（土）名古屋レジェンドホールにて収録</p>
+    <a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">アーカイブを申し込む <small>5,500円</small></a>
+    <p class="btn-note">販売は 11月30日（月）23:59 まで</p>
+  </div>
+</header>
+
+<!-- 数字 -->
+<section>
+  <div class="wrap">
+    <span class="label">THE DAY</span>
+    <h2>あの日、会場には<br><span class="em">あたたかい笑顔</span>があふれました</h2>
+    <div class="stats">
+      <div class="stat"><b>100<small style="font-size:.5em">名超</small></b><span>お申し込み</span></div>
+      <div class="stat"><b>90<small style="font-size:.5em">名超</small></b><span>ご来場</span></div>
+      <div class="stat"><b>3<small style="font-size:.5em">部</small></b><span>講演・ゲスト・<br>クロストーク</span></div>
+    </div>
+    <div class="praise">
+      <p class="praise-main">「ここ最近聞いた講演会で、<br>一番感動した！」</p>
+      <p class="praise-sub">「感動しました」</p>
+      <p class="praise-from">講演会のあとのシェア会で、参加された方からいただいた言葉です</p>
+    </div>
+  </div>
+</section>
+
+<!-- こんな方へ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="label">FOR YOU</span>
+    <h2>こんな方に、見ていただきたい</h2>
+    <ul class="checks">
+      <li>行きたかったけれど、当日は会場に行けなかった</li>
+      <li>あの日の言葉を、もう一度ゆっくり聞きたい</li>
+      <li>自分のことを、なかなか好きになれない</li>
+      <li>「もう若くないから」と、何かをあきらめかけている</li>
+      <li>大切な家族や友だちと、一緒に見たい</li>
+    </ul>
+  </div>
+</section>
+
+<!-- メッセージ -->
+<section class="message">
+  <div class="wrap">
+    <span class="label">MESSAGE</span>
+    <h2>あなたは、<span class="em">最高傑作品</span>です</h2>
+    <p class="lead">何歳からでも、人生はやり直せる。<br>自分のことを好きになれたとき、<br>人生は、ここから、何度でも輝きはじめる。</p>
+    <p>専業主婦だった私が、一歩を踏み出し、会社をつくって1年。たくさんの方に支えられて、この日を迎えることができました。</p>
+    <p>講演会では、私がこれまでの人生で気づいたこと、そして「自分を好きになる」ための考え方を、心をこめてお話ししました。</p>
+    <p>会場に来られなかった方にも、あの日の空気ごと、受け取っていただけたらうれしいです。</p>
+    <p class="sign">やすむら ひろみ</p>
+  </div>
+</section>
+
+<!-- 切り抜き動画 -->
+<section>
+  <div class="wrap">
+    <span class="label">MOVIE</span>
+    <h2>講演の一部を、<br>少しだけご覧ください</h2>
+    <div class="clip">
+      <video controls playsinline preload="none" poster="clip_poster.jpg">
+        <source src="clip.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p class="btn-note">「あなたは、最高傑作品です」（約1分40秒・音声が出ます）</p>
+  </div>
+</section>
+
+<!-- 収録内容 -->
+<section>
+  <div class="wrap">
+    <span class="label">PROGRAM</span>
+    <h2>アーカイブの内容</h2>
+    <div class="prog">
+      <div class="prog-item stage">
+        <img src="stage.jpg" alt="講演するやすむらひろみ">
+        <div class="prog-body">
+          <span class="no">PART 1</span>
+          <h3>やすむらひろみ 講演<br>「自分を好きになる人生戦略 〜あなたは最高傑作品〜」</h3>
+          <p>専業主婦から一歩を踏み出し、会社をつくるまでの道のり。自分を認め、好きになるための考え方をお話しします。</p>
+        </div>
+      </div>
+      <div class="prog-item">
+        <div class="prog-body">
+          <span class="no">PART 2</span>
+          <h3>ゲストスピーチ：岡崎かつひろさん<br>「あなたは本当に最高傑作品か？」</h3>
+          <p>人財プロデューサーの岡崎かつひろさんが、会場に投げかけた問い。あなたなら、何と答えますか？</p>
+        </div>
+      </div>
+      <div class="prog-item">
+        <img src="crosstalk.jpg" alt="クロストークの様子。左から下間都代子さん、やすむらひろみ、岡崎かつひろさん">
+        <div class="prog-body">
+          <span class="no">PART 3</span>
+          <h3>クロストーク<br>やすむらひろみ × 岡崎かつひろさん × 下間都代子さん</h3>
+          <p>アナウンサーの下間都代子さんの進行で、3人が本音で語り合いました。台本のない時間だからこそ出てきた言葉が、たくさんあります。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- お客様の声 -->
+<section class="voices" id="voices">
+  <div class="wrap">
+    <span class="label">VOICES</span>
+    <h2>会場で聞いた方の声</h2>
+    <div class="voice-grid">
+      <div class="voice big">
+        <p>会場でのひろみさんは、本当に輝いていらっしゃいました。ご本人は「こんな自分が…」と謙遜されていましたが、その姿からは、創立から1年で積み重ねてこられたものの確かさが伝わってきました。</p>
+        <p>印象に残ったのは、ひろみさんを支える皆さんの存在です。人が人を支え、支えられた人がまた輝く。そんな温かい循環が会場全体に満ちていて、応援されている気持ちになりました。</p>
+        <p class="who">講演会にご参加の方</p>
+      </div>
+      <div class="voice big">
+        <p>誰もが何億分の一の確率で生まれてきた、特別な存在であることを教えていただきました。感動的で、心に深く刺さりました。</p>
+        <p class="who">講演会にご参加の方</p>
+      </div>
+      <div class="voice">
+        <p>自分を認めることって、結構難しい。なぜなら「他者との比較」があるから。できるなら、そこに目を向けず、今生きていることの意味を、魂に問いかける。自分という「今世での最高傑作」に氣付けるとき、生きることの意味を命として感じられるような気がします。</p>
+        <p class="who">澤田 和形さん</p>
+      </div>
+      <div class="voice">
+        <p>専業主婦だったひろちゃんが、今の活動につながっていく、その過程のお話。何度聞いても、やっぱり感動でした！</p>
+        <p class="who">高橋 仁美さん</p>
+      </div>
+      <div class="voice">
+        <p>あなたは最高傑作品。唯一無二の存在、生きるほど価値が高まる。今振り返ると、そんなことが心に響いています。</p>
+        <p class="who">レイチェル・なかゆきさん</p>
+      </div>
+      <div class="voice">
+        <p>つながりと、人は年齢に関係なく挑戦できること。刺激を受けました。</p>
+        <p class="who">講演会にご参加の方</p>
+      </div>
+      <div class="voice">
+        <p>岡崎かつひろさんの講演を聴けたこと。「阪急電鉄の声の人」と自己紹介された下間さんのことも、心に残っています。</p>
+        <p class="who">平野 弘子さん</p>
+      </div>
+      <div class="voice">
+        <p>去年もそうですが、応援する方がいっぱいなこと。話し方の先生とのやりとりも楽しかったです。</p>
+        <p class="who">志賀 薫さん</p>
+      </div>
+      <div class="voice">
+        <p>ひろみさんが語られた、ご主人とのお話。そして「ここからフルネス」の歌。</p>
+        <p class="who">講演会にご参加の方</p>
+      </div>
+    </div>
+    <div class="chips">
+      <span class="chip">「あなたはすでに最高傑作品」という言葉<em>服部 正子さん</em></span>
+      <span class="chip">「あなたは最高傑作品」のメッセージ<em>木本 香織さん</em></span>
+      <span class="chip">ひろみさんが自然にみんなの応援をしていること！<em>笠谷 佳代さん</em></span>
+      <span class="chip">ひろみさんのキャラ<em>春日 友里さん</em></span>
+    </div>
+    <p class="voice-note">シェア会のお申し込みフォームでいただいた感想を、ご本人の了承を得て掲載しています。</p>
+  </div>
+</section>
+
+<!-- 講師・ゲスト -->
+<section>
+  <div class="wrap">
+    <span class="label">SPEAKERS</span>
+    <h2>登壇者</h2>
+    <div class="person host">
+      <img src="profile.jpg" alt="やすむらひろみ">
+      <div>
+        <h3>やすむら ひろみ</h3>
+        <div class="role">ここからフルネス株式会社 代表／心と身体を満たす体質改善コーチ</div>
+        <p>専業主婦から一歩を踏み出し、「心と身体を整え、本来の自分を取り戻すことで、誰もが何歳からでも羽ばたける世界を創る」を使命に、ここからフルネス株式会社を立ち上げる。創業1周年となる2026年10月、名古屋レジェンドホールで記念講演会を開催。</p>
+      </div>
+    </div>
+    <div class="person">
+      <img src="okazaki.jpg" alt="岡崎かつひろさん">
+      <div>
+        <h3>岡崎 かつひろさん</h3>
+        <div class="role">人財プロデューサー／ビジネス書作家</div>
+        <p>株式会社XYZ 代表取締役。飲食業・講師業・不動産業など幅広く事業を展開。研修講師や全国出版オーディションの主宰、20〜30代の若手人材の育成にも力を注ぐ。著書に『要領のいい人が最初に考えること』（三笠書房）、『ChatGPTで一番ラクして頭のいい人になる』（講談社）など。</p>
+      </div>
+    </div>
+    <div class="person">
+      <img src="shimotsuma.jpg" alt="下間都代子さん">
+      <div>
+        <h3>下間 都代子さん</h3>
+        <div class="role">アナウンサー・ナレーター（クロストーク進行）</div>
+        <p>元FM802アナウンサー。阪急電鉄の車内放送や京阪電車の駅構内放送を担当し、関西では「電車の声の人」として親しまれている。話し方・発声講座でこれまで3,000人以上を指導。著書に『今すぐ!思わず!もう一度! 人前で話したくなる声と話し方』（日本実業出版社）など。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- お申し込み -->
+<section class="message" id="offer">
+  <div class="wrap">
+    <span class="label">ARCHIVE</span>
+    <h2>お申し込み</h2>
+    <div class="offer">
+      <div class="title">ここからフルネス株式会社 創業1周年記念講演会<br>「自分を好きになる人生戦略 〜あなたは最高傑作品〜」アーカイブ</div>
+      <div class="price">5,500<small>円（税込）</small></div>
+      <div class="deadline">販売は 11月30日（月）23:59 まで</div>
+      <div><a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">アーカイブを申し込む</a></div>
+      <p class="btn-note">リザーブストックのお申し込みページに移ります</p>
+      <dl class="spec">
+        <div><dt>収録日</dt><dd style="margin:0">2026年10月10日（土）名古屋レジェンドホール</dd></div>
+        <div><dt>内容</dt><dd style="margin:0">講演・ゲストスピーチ・クロストーク</dd></div>
+        <div><dt>お支払い</dt><dd style="margin:0">クレジットカード（PayPal）／銀行振込</dd></div>
+        <div><dt>視聴方法</dt><dd style="margin:0">お支払い確認後、視聴URLをメールでお届けします（YouTube 限定公開）</dd></div>
+        <div><dt>視聴期間</dt><dd style="margin:0">ご購入から30日間</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- よくある質問 -->
+<section>
+  <div class="wrap">
+    <span class="label">Q &amp; A</span>
+    <h2>よくあるご質問</h2>
+    <details>
+      <summary>スマートフォンでも見られますか？</summary>
+      <p>はい。パソコン・スマートフォン・タブレットからご覧いただけます。YouTube のアプリがなくても、ブラウザで再生できます。</p>
+    </details>
+    <details>
+      <summary>視聴URLは、いつ届きますか？</summary>
+      <p>クレジットカード（PayPal）でお支払いの場合は、お支払いのあとすぐにメールでお届けします。銀行振込の場合は、お振込みを確認したあとにお届けします。</p>
+    </details>
+    <details>
+      <summary>メールが届きません。</summary>
+      <p>迷惑メールフォルダに入っていないか、ご確認ください。それでも見つからない場合は、公式LINEからお気軽にご連絡ください。</p>
+    </details>
+    <details>
+      <summary>家族と一緒に見てもいいですか？</summary>
+      <p>はい、ご家族と一緒にご覧いただけます。ただ、視聴URLをSNSなどで共有することは、ご遠慮ください。</p>
+    </details>
+    <details>
+      <summary>返金はできますか？</summary>
+      <p>動画という性質上、ご購入後の返金はお受けしておりません。ご了承ください。</p>
+    </details>
+  </div>
+</section>
+
+<!-- 最後 -->
+<section class="final">
+  <div class="wrap">
+    <p class="lead">あなたは、最高傑作品。<br>その言葉を、受け取ってください。</p>
+    <a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">アーカイブを申し込む <small>5,500円</small></a>
+    <p class="btn-note">販売は 11月30日（月）23:59 まで</p>
+  </div>
+</section>
+
+<footer>
+  主催：ここからフルネス株式会社　／　お問い合わせ：やすむらひろみ（公式LINE）<br>
+  © ここからフルネス株式会社
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="p">5,500円<small>11/30（月）まで</small></div>
+  <a class="btn" href="https://www.reservestock.jp/stores/article/24861/YTI1NzQ0MDk1Z">申し込む</a>
+</div>
+
+<script>
+(function(){
+  var s=document.getElementById('sticky'), hero=document.querySelector('.hero'), offer=document.getElementById('offer');
+  function upd(){
+    var past=hero.getBoundingClientRect().bottom<0;
+    var r=offer.getBoundingClientRect(), inOffer=r.top<window.innerHeight&&r.bottom>0;
+    s.classList.toggle('show',past&&!inOffer);
+  }
+  window.addEventListener('scroll',upd,{passive:true}); upd();
+})();
+</script>
+</body>
+</html>
