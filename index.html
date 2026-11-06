@@ -107,6 +107,10 @@ p{margin:0 0 1.2em}
 .prog-item.stage img{object-position:50% 25%}
 .clip{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:#000}
 .clip video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.vvideo{margin:0 0 30px}
+.vvideo .clip{margin-top:10px}
+.vvideo-cap{margin:12px 0 0;text-align:center;font-size:14px;color:var(--muted)}
+.vvideo-lead{margin:0;text-align:center;font-family:var(--serif);font-weight:700;font-size:clamp(17px,4.4vw,20px);color:var(--accent-deep)}
 
 /* voices */
 .voices{background:var(--blush)}
@@ -289,6 +293,15 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 40p
   <div class="wrap">
     <span class="label">VOICES</span>
     <h2>会場で聞いた方の声</h2>
+    <div class="vvideo">
+      <p class="vvideo-lead">「人って、こんなに変わるんだって<br>とっても感動しました」</p>
+      <div class="clip">
+        <video controls playsinline preload="none" poster="voice_video_poster.jpg">
+          <source src="voice_video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="vvideo-cap">講演会に2回ご参加の、ひろこさん（動画・約40秒）</p>
+    </div>
     <div class="voice-grid">
       <div class="voice big">
         <p>会場でのひろみさんは、本当に輝いていらっしゃいました。ご本人は「こんな自分が…」と謙遜されていましたが、その姿からは、創立から1年で積み重ねてこられたものの確かさが伝わってきました。</p>
